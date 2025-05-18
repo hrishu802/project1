@@ -1,6 +1,5 @@
 'use client';
 
-import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import JobDetailCard from '@/components/ui/JobDetailCard';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
