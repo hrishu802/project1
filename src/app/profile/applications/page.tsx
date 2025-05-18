@@ -76,7 +76,7 @@ interface Application {
 }
 
 export default function ApplicationsPage() {
-  const [applications, setApplications] = useState<Application[]>(MOCK_APPLICATIONS);
+  const [applications] = useState<Application[]>(MOCK_APPLICATIONS);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [filter, setFilter] = useState<ApplicationStatus | 'all'>('all');
   

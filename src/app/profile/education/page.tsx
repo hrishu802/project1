@@ -207,7 +207,7 @@ export default function EducationPage() {
                 >
                   <option value="">Select a degree</option>
                   <option value="High School Diploma">High School Diploma</option>
-                  <option value="Associate's Degree">Associate's Degree</option>
+                  <option value="Associate&apos;s Degree">Associate&apos;s Degree</option>
                   <option value="Bachelor of Arts">Bachelor of Arts</option>
                   <option value="Bachelor of Science">Bachelor of Science</option>
                   <option value="Master of Arts">Master of Arts</option>
