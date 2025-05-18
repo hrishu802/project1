@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNotifications, Notification } from '@/hooks/useNotifications';
 import PageHeader from '@/components/ui/PageHeader';
 import NotificationDemo from '@/components/ui/NotificationDemo';
@@ -125,7 +125,7 @@ export default function NotificationsPage() {
               <div key={date} className="animate-fade-in">
                 <h2 className="text-sm font-medium text-gray-500 mb-4">{formatDateHeader(date)}</h2>
                 <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                  {groupedNotifications[date].map((notification, index) => (
+                  {groupedNotifications[date].map((notification: Notification, index: number) => (
                     <div 
                       key={notification.id}
                       className={`p-4 flex items-start ${!notification.read ? 'bg-blue-50' : ''} ${

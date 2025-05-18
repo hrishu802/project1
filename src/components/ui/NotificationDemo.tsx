@@ -51,7 +51,7 @@ const NotificationDemo = () => {
             id="notification-type"
             className="form-input"
             value={demoType}
-            onChange={(e) => setDemoType(e.target.value as any)}
+            onChange={(e) => setDemoType(e.target.value as 'job_alert' | 'application_update' | 'message' | 'system')}
           >
             <option value="job_alert">Job Alert</option>
             <option value="application_update">Application Update</option>

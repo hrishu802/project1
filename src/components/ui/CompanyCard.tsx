@@ -1,4 +1,6 @@
+import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPinIcon, BriefcaseIcon } from '@heroicons/react/24/outline';
 
 interface CompanyCardProps {
@@ -34,9 +36,11 @@ const CompanyCard = ({
       <div className="flex items-start">
         <div className="flex-shrink-0">
           {logo ? (
-            <img 
+            <Image 
               src={logo} 
               alt={`${name} logo`} 
+              width={64}
+              height={64}
               className="h-16 w-16 rounded-md object-contain bg-gray-50 p-1 border border-gray-200" 
             />
           ) : (

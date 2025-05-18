@@ -160,7 +160,7 @@ export default function ContactPage() {
                     <div className="ml-3">
                       <h3 className="text-sm font-medium text-green-800">Message sent successfully</h3>
                       <p className="mt-2 text-sm text-green-700">
-                        Thank you for contacting us! We'll get back to you as soon as possible.
+                        Thank you for contacting us! We&apos;ll get back to you as soon as possible.
                       </p>
                       <div className="mt-4">
                         <button

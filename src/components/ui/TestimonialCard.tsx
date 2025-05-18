@@ -38,7 +38,7 @@ const TestimonialCard = ({
 
       {/* Quote */}
       <blockquote className="text-gray-700 flex-grow">
-        <p className="text-lg font-medium leading-relaxed">"{quote}"</p>
+        <p className="text-lg font-medium leading-relaxed">&quot;{quote}&quot;</p>
       </blockquote>
 
       {/* Author */}

@@ -1,7 +1,9 @@
 'use client';
 
+import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BookmarkIcon as BookmarkOutline } from '@heroicons/react/24/outline';
 import { BookmarkIcon as BookmarkSolid } from '@heroicons/react/24/solid';
 
@@ -51,9 +53,11 @@ const JobCard = ({
       <Link href={href} className="flex flex-col sm:flex-row gap-4">
         <div className="flex-shrink-0">
           {logo ? (
-            <img 
+            <Image 
               src={logo} 
               alt={`${company} logo`} 
+              width={48}
+              height={48}
               className="h-12 w-12 rounded-md object-contain bg-gray-50 p-1 border border-gray-200" 
             />
           ) : (

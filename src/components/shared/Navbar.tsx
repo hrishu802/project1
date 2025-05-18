@@ -2,6 +2,7 @@
 
 import { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Bars3Icon, XMarkIcon, UserCircleIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import NotificationCenter from '@/components/ui/NotificationCenter';
 import { useNotifications } from '@/hooks/useNotifications';
@@ -22,7 +23,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const { 
     notifications, 
-    loading, 
     markAsRead, 
     markAllAsRead, 
     clearNotification 
@@ -94,10 +94,12 @@ const Navbar = () => {
                     <Menu.Button className="flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                       <span className="sr-only">Open user menu</span>
                       {user.avatar ? (
-                        <img
+                        <Image
                           className="h-8 w-8 rounded-full"
                           src={user.avatar}
                           alt={user.name}
+                          width={32}
+                          height={32}
                         />
                       ) : (
                         <div className="flex items-center">
@@ -244,10 +246,12 @@ const Navbar = () => {
                   <div className="flex items-center px-4">
                     <div className="flex-shrink-0">
                       {user.avatar ? (
-                        <img
+                        <Image
                           className="h-10 w-10 rounded-full"
                           src={user.avatar}
                           alt={user.name}
+                          width={40}
+                          height={40}
                         />
                       ) : (
                         <UserCircleIcon className="h-10 w-10 text-gray-400" />

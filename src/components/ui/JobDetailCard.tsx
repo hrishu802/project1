@@ -1,7 +1,9 @@
 'use client';
 
+import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   BuildingOfficeIcon, 
   MapPinIcon, 
@@ -76,9 +78,11 @@ const JobDetailCard = ({
         <div className="flex flex-col md:flex-row md:items-start md:justify-between">
           <div className="flex items-start">
             {logo ? (
-              <img 
+              <Image 
                 src={logo} 
                 alt={`${company} logo`} 
+                width={64}
+                height={64}
                 className="h-16 w-16 rounded-md object-contain bg-gray-50 p-1 border border-gray-200 mr-4" 
               />
             ) : (

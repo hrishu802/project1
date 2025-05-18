@@ -56,7 +56,6 @@ Our mission is to empower businesses through technology, and we're passionate ab
 // In a real app, you would fetch the job data based on the ID from the params
 export default function JobDetailPage() {
   const params = useParams();
-  const jobId = params.id as string;
   
   // For demo purposes, we're using the mock data
   // In a real app, you would fetch the job data based on jobId
