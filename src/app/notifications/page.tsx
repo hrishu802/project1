@@ -82,7 +82,7 @@ export default function NotificationsPage() {
               <select
                 className="form-input py-1 text-sm"
                 value={filter}
-                onChange={(e) => setFilter(e.target.value as any)}
+                onChange={(e) => setFilter(e.target.value as 'all' | 'unread' | 'job_alert' | 'application_update' | 'message' | 'system')}
               >
                 <option value="all">All notifications</option>
                 <option value="unread">Unread</option>
