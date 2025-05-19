@@ -14,7 +14,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 // Mock application data - in a real app, this would come from an API
-const MOCK_APPLICATIONS = [
+const MOCK_APPLICATIONS: Application[] = [
   {
     id: '1',
     jobTitle: 'Senior Frontend Developer',
